@@ -28,7 +28,7 @@ main.pyは一回限りの対話、test.pyは"終了"と入力するまで終わ�
 3. **Gemini API により応答を生成**
 4. **応答をコンソールに出力**
 
-##環境・前提条件
+## 環境・前提条件
 Python 3.8 以上
 Windows / Mac / Linux いずれでもOK（推奨：Windows）
 マイク付きのPC
