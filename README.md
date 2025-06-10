@@ -15,6 +15,11 @@ main.pyは一回限りの対話、test.pyは"終了"と入力するまで終わ�
 - AR/MR表示や対話型AIへの応用
 
 ---
+## 特徴
+
+- 音声認識（Whisper）
+- ChatGPTによる応答生成
+- 音声合成（pyttsx3）
 
 ## 🔁 処理の流れ
 
@@ -28,8 +33,28 @@ Python 3.8 以上
 Windows / Mac / Linux いずれでもOK（推奨：Windows）
 マイク付きのPC
 
-##セットアップ手順
-1.このリポジトリをダウンロード
-```git clone https://github.com/dev-ryu-lea/voice-chatbot.git
-  cd voice-chatbot
+## セットアップ手順
+
+### 1. リポジトリをダウンロード
+```bash
+git clone https://github.com/dev-ryu-lea/voice-chatbot.git
+cd voice-chatbot
 ```
+### 2.必要なライブラリのインストール
+```
+pip install -r requirements.txt
+```
+### 3.OpenAI APIキーの設定
+1.main.pyに自分のAPIKEYを直接書き込んでください
+注意：情報漏洩が怖い場合プロジェクトフォルダに.envというファイルを作成しその中に記述し環境変数としてエクスポートしてください
+
+##　今後の展望
+今現在WebSocketを用いたリアルタイム音声対話を開発中
+使っているPCのスペック上TTSによる音声発話はいったん保留とし、マイクで入力リアルタイムで文字お越しを想定しています
+
+
+
+
+
+
+
